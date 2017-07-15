@@ -1,4 +1,4 @@
-package cr.ac.ucr.ecci.ci1310.cache.;
+package cr.ac.ucr.ecci.ci1310.cache;
 
 /**
  * Hello world!
@@ -6,8 +6,7 @@ package cr.ac.ucr.ecci.ci1310.cache.;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void  main(String[] parametros){
+        System.out.print("hola");
     }
 }
