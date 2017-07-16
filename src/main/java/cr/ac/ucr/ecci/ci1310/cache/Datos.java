@@ -7,5 +7,5 @@ import java.time.LocalDateTime;
  */
 public class Datos {
     private LocalDateTime lastAccessTime;
-    
+
 }
