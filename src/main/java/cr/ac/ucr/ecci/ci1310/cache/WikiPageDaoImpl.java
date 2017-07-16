@@ -6,29 +6,26 @@ import java.sql.*;
  * Created by pjmq2 on 15/07/2017.
  */
 public class WikiPageDaoImpl implements WikiPageDao {
-    private SQLData sql;
+    private String sqlConnectionString;
+    private String classForName;
+    private String user;
+    private String password;
 
     public WikiPageDaoImpl(SQLData sql) {
-        this.sql = sql;
+        classForName = "com.mysql.jdbc.Driver";
+        sqlConnectionString = "jdbc:mysql://localhost:3306/wiki";
+        user = "root";
+        password = "hola";
     }
 
-    public void searchId(String id){
-
+    public WikiPage searchId(String id){
+        Class.forName(classForName);
+        Connection sqlConnection = DriverManager.getConnection( sqlConnectionString, user, password);
+        Statement sqlStatement = sqlConnection.createStatement();
+        ResultSet sqlResult = sqlStatement.executeQuery();
     }
 
-    public void searchName(String name) {
+    public WikiPage searchName(String name) {
 
-    }
-
-    public static Connection getConnection(){
-        Connection connection=null;
-        try{
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/wiki","root","hola");
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-        return connection;
     }
 }
