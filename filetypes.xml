@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="Data" type="CLASS" />
+      <mapping pattern="WikiPage" type="CLASS" />
     </extensionMap>
   </component>
 </application>
