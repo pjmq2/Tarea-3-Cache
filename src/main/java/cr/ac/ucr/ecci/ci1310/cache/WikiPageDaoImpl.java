@@ -41,6 +41,7 @@ public class WikiPageDaoImpl implements WikiPageDao {
         if(sqlConnection != null){
             Statement sqlStatement = sqlConnection.createStatement();
             ResultSet sqlResult = sqlStatement.executeQuery(query);
+            sqlResult.next();
             int sqlId = sqlResult.getInt("page_id");
             int namespace = sqlResult.getInt("page_namespace");
             String title = sqlResult.getString("page_title");
@@ -61,7 +62,7 @@ public class WikiPageDaoImpl implements WikiPageDao {
         String query = "Select * from page where page_title like '%"+ name +"%'";
         if(sqlConnection != null){
             Statement sqlStatement = sqlConnection.createStatement();
-            ResultSet sqlResult = sqlStatement.executeQuery("");
+            ResultSet sqlResult = sqlStatement.executeQuery(query);
             while(sqlResult.next()){
                 int sqlId = sqlResult.getInt("page_id");
                 int namespace = sqlResult.getInt("page_namespace");

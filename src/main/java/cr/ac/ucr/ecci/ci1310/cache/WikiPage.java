@@ -75,7 +75,13 @@ public class WikiPage {
         mensaje += "Random: " + random + "\n";
         mensaje += "Latest: " + latest + "\n";
         mensaje += "len: " + len + "\n";
-        System.out.print(mensaje);
+        System.out.println(mensaje);
+    }
+
+    public void printIdTitle(){
+        String mensaje = "id: " + id;
+        mensaje += ", Title: " + title;
+        System.out.println(mensaje);
     }
 }
 
