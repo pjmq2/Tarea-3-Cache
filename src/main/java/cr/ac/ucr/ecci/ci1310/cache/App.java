@@ -10,12 +10,17 @@ import java.util.*;
  */
 public class App 
 {
-    public static void  main(String[] parametros) throws SQLException, ClassNotFoundException {
-        WikiPageDaoImpl busqueda = new WikiPageDaoImpl();
-        ArrayList<WikiPage> lista = busqueda.searchName("kansas");
 
-        for(WikiPage wiki:lista){
-            wiki.print();
-        }
+    public static void  main(String[] parametros) throws Throwable {
+        menu();
+    }
+
+    public static void menu() throws Throwable {
+        MenuController menu = new MenuController();
+    }
+
+    public void prueba1() throws SQLException, ClassNotFoundException {
+        WikiPageServiceImpl wikipedia = new WikiPageServiceImpl(false);
+        ArrayList<WikiPage> lista = wikipedia.searchName("Kansas");
     }
 }

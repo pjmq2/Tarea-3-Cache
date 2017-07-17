@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7392b1da-35fc-4fef-9e4c-62b894253002" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/App.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPage.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageService.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,18 +33,7 @@
     <favorites_list name="CI1310" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,14 +56,14 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WkiPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/cr/ac/ucr/ecci/ci1310/cache/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" />
       </list>
     </option>
   </component>
@@ -199,26 +185,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.App">
-    <configuration default="false" name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="cr.ac.ucr.ecci.ci1310.cache.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="cr.ac.ucr.ecci.ci1310.cache.App" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Tarea-3-Cache" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -628,6 +594,26 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="false" name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cr.ac.ucr.ecci.ci1310.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cr.ac.ucr.ecci.ci1310.cache.App" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Tarea-3-Cache" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="CacheTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Tarea-3-Cache" />
@@ -650,14 +636,9 @@
       <method />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CacheTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.App" />
+      <item index="0" class="java.lang.String" itemvalue="Application.App" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CacheTest" />
     </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.App" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -673,7 +654,7 @@
       <workItem from="1500229370567" duration="3939000" />
       <workItem from="1500237083316" duration="4726000" />
       <workItem from="1500247809188" duration="4000" />
-      <workItem from="1500247872734" duration="5318000" />
+      <workItem from="1500247872734" duration="12485000" />
     </task>
     <task id="LOCAL-00001" summary="Subida inicial">
       <created>1499827964794</created>
@@ -686,7 +667,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14380000" />
+    <option name="totallyTimeSpent" value="21547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -699,7 +680,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -711,12 +691,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33260155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33260155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36638832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -775,7 +755,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -800,8 +780,9 @@
           <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1500258429606" expanded="true" signature="1089:1123" ph="Select * fro... page" />
-            <marker date="1500258429606" expanded="true" signature="2250:2305" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="1089:1123" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="2285:2340" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="3554:3616" ph="Select count... page" />
           </folding>
         </state>
       </provider>
@@ -840,8 +821,9 @@
           <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1500258429606" expanded="true" signature="1089:1123" ph="Select * fro... page" />
-            <marker date="1500258429606" expanded="true" signature="2250:2305" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="1089:1123" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="2285:2340" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="3554:3616" ph="Select count... page" />
           </folding>
         </state>
       </provider>
@@ -906,8 +888,9 @@
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1500258429606" expanded="true" signature="1089:1123" ph="Select * fro... page" />
-            <marker date="1500258429606" expanded="true" signature="2250:2305" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="1089:1123" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="2285:2340" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="3554:3616" ph="Select count... page" />
           </folding>
         </state>
       </provider>
@@ -946,54 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="108" lean-forward="false" selection-start-line="9" selection-start-column="108" selection-end-line="9" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1500258429606" expanded="true" signature="1089:1123" ph="Select * fro... page" />
-            <marker date="1500258429606" expanded="true" signature="2250:2305" ph="Select * fro... page" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7245">
@@ -1002,10 +937,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="98" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#767#777#0" expanded="true" />
@@ -1013,11 +966,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1500262058485" expanded="true" signature="1089:1123" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="2285:2340" ph="Select * fro... page" />
+            <marker date="1500262058485" expanded="true" signature="3554:3616" ph="Select count... page" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="67" column="23" lean-forward="false" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="40">
+          <caret line="79" column="226" lean-forward="true" selection-start-line="79" selection-start-column="226" selection-end-line="79" selection-end-column="226" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -52,6 +52,7 @@ public class WikiPageDaoImpl implements WikiPageDao {
             int latest = sqlResult.getInt("page_latest");
             int len = sqlResult.getInt("page_len");
             wiki = new WikiPage(sqlId, namespace, title,counter, is_redirect,is_new,random,latest,len );
+            sqlConnection.close();
         }
         return wiki;
     }
@@ -76,10 +77,27 @@ public class WikiPageDaoImpl implements WikiPageDao {
                 WikiPage wiki = new WikiPage(sqlId, namespace, title,counter, is_redirect,is_new,random,latest,len );
                 wikipedia.add(wiki);
             }
+            sqlConnection.close();
         }
         return wikipedia;
     }
-     private Connection conecting() throws SQLException, ClassNotFoundException {
+
+    public int numberSearchName(String name) throws SQLException, ClassNotFoundException {
+        int number=0;
+        Connection sqlConnection = conecting();
+        String query = "Select count(*) from page where page_title like '%"+ name +"%'";
+        if(sqlConnection != null) {
+            Statement sqlStatement = sqlConnection.createStatement();
+            ResultSet sqlResult = sqlStatement.executeQuery(query);
+            sqlResult.next();
+            number = sqlResult.getInt(1);
+            sqlConnection.close();
+        }
+        return number;
+    }
+
+
+    private Connection conecting() throws SQLException, ClassNotFoundException {
          Class.forName(classForName);
          Connection sqlConnection = DriverManager.getConnection( sqlConnectionString, user, password);
          return sqlConnection;

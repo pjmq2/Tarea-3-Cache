@@ -35,4 +35,14 @@ public class WikiPageServiceImpl implements WikiPageService {
         }
         return list;
     }
+
+    public int numberSearchName(String name) throws SQLException, ClassNotFoundException {
+        int number = 0;
+        if(useCache){
+
+        }else {
+            number = dao.numberSearchName(name);
+        }
+        return number;
+    }
 }

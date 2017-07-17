@@ -65,8 +65,7 @@ public class WikiPage {
     }
 
     public void print(){
-        String mensaje = "Wikipage: \n";
-        mensaje += "id: " + id + "\n";
+        String mensaje = "id: " + id + "\n";
         mensaje += "Namespace: " + namespace + "\n";
         mensaje += "Title: " + title + "\n";
         mensaje += "Counter: " + counter + "\n";

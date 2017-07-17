@@ -10,4 +10,5 @@ import java.util.ArrayList;
 public interface WikiPageDao {
     public abstract WikiPage searchId(String id) throws SQLException, ClassNotFoundException;
     public abstract ArrayList<WikiPage> searchName(String name) throws SQLException, ClassNotFoundException;
+    public abstract int numberSearchName(String name) throws SQLException, ClassNotFoundException;
 }
