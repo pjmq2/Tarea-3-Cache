@@ -15,24 +15,10 @@ public class WikiPageDaoImpl implements WikiPageDao {
 
     public WikiPageDaoImpl() {
         classForName = "com.mysql.jdbc.Driver";
-        sqlConnectionString = "jdbc:mysql://localhost:3306/wiki";
+        sqlConnectionString = "jdbc:mysql://localhost:3306/wiki?useSSL=false";
         user = "root";
         password = "hola";
-    }
-
-    /*
-1 - page_id int(10) UN AI PK
-2 - page_namespace int(11)
-3 - page_title varchar(255)
-4 - NO SE TRATARA page_restrictions tinyblob
-5 - page_counter bigint(20) UN
-6 - page_is_redirect tinyint(3) UN
-7 - page_is_new tinyint(3) UN
-8 - page_random double UN
-9 - NO SE TRATARA page_touched binary(14)
-10 - page_latest int(10) UN
-11 - page_len int(10) UN
-* */
+    } //Constructor de la clase
 
     public WikiPage searchId(String id) throws SQLException, ClassNotFoundException {
         WikiPage wiki = null;
@@ -55,7 +41,7 @@ public class WikiPageDaoImpl implements WikiPageDao {
             sqlConnection.close();
         }
         return wiki;
-    }
+    } //Permite buscar una pagina por Id desde la base de datos
 
     public ArrayList<WikiPage> searchName(String name) throws SQLException, ClassNotFoundException {
         ArrayList<WikiPage> wikipedia = new ArrayList<WikiPage>();
@@ -80,7 +66,7 @@ public class WikiPageDaoImpl implements WikiPageDao {
             sqlConnection.close();
         }
         return wikipedia;
-    }
+    } //Permite buscar un arreglo de paginas por titulo desde la base de datos
 
     public int numberSearchName(String name) throws SQLException, ClassNotFoundException {
         int number=0;
@@ -94,12 +80,11 @@ public class WikiPageDaoImpl implements WikiPageDao {
             sqlConnection.close();
         }
         return number;
-    }
-
+    } //Devuelve la cantidad de paginas que se copiaron con la busqueda por titulo
 
     private Connection conecting() throws SQLException, ClassNotFoundException {
          Class.forName(classForName);
          Connection sqlConnection = DriverManager.getConnection( sqlConnectionString, user, password);
          return sqlConnection;
-     }
+     } //Crea una conexion segura a la base de datos
 }
