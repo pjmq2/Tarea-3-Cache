@@ -1,6 +1,10 @@
 package cr.ac.ucr.ecci.ci1310.cache;
 
+import com.sun.org.apache.bcel.internal.generic.LoadClass;
+
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,8 +13,7 @@ import java.util.Scanner;
  */
 public class MenuController {
     WikiPageServiceImpl wikipedia;
-    public MenuController() throws Throwable {
-        iniciar();
+    public MenuController(){
     }
 
     public void iniciar() throws Throwable {
@@ -92,6 +95,23 @@ public class MenuController {
             System.out.println("Favor digitar una letra correcta");
             finalizar();
         }
+    }
+    public void pruebas() throws SQLException, ClassNotFoundException {
+        System.out.print("Bienvenido a la seccion de pruebas y estadisticas. A continuacion se realizaran las siguientes pruebas:\n");
+        WikiPageServiceImpl serviceCache = new WikiPageServiceImpl(true);
+        WikiPageServiceImpl serviceNormal = new WikiPageServiceImpl(false);
+        LocalDateTime hola = LocalDateTime.now();
+        WikiPage wiki = null;
+        //Primero vamos a dejar cargadas ciertas paginas en el cache
+        for(int i=0; i<21; i++){
+            int p = 1+20;
+            serviceNormal.searchId(""+p);
+        }
+        LocalDateTime otro = LocalDateTime.now();
+        long seconds = ChronoUnit.MILLIS.between(hola,otro);
+        System.out.println("1: "+hola +"\n2: "+otro+"\ndiferencia: "+seconds);
+        //Seguidamente vamos a revisar cuanto tiempo se dura buscando dicha pagina con o sin cache
+
     }
 }
 

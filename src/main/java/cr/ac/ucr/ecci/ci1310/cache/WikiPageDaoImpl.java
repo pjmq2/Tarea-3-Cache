@@ -15,7 +15,7 @@ public class WikiPageDaoImpl implements WikiPageDao {
 
     public WikiPageDaoImpl() {
         classForName = "com.mysql.jdbc.Driver";
-        sqlConnectionString = "jdbc:mysql://localhost:3306/wiki";
+        sqlConnectionString = "jdbc:mysql://localhost:3306/wiki?useSSL=false";
         user = "root";
         password = "hola";
     }

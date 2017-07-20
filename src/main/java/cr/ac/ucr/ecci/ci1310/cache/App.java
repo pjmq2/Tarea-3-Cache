@@ -10,16 +10,18 @@ import java.util.*;
  */
 public class App 
 {
+    private static  MenuController menu;
 
     public static void  main(String[] parametros) throws Throwable {
-        menu();
+       menu = new MenuController();
+       pruebas();
     }
 
-    public static void menu() throws Throwable {
-        MenuController menu = new MenuController();
+    public static void pruebas() throws SQLException, ClassNotFoundException {
+        menu.pruebas();
     }
 
-    public void pruebas(){
-
+    public static void iniciar() throws Throwable {
+        menu.iniciar();
     }
 }
