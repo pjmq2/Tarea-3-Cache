@@ -9,8 +9,8 @@
         <module name="Tarea-3-Cache" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Tarea-3-Cache" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="Tarea-3-Cache" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

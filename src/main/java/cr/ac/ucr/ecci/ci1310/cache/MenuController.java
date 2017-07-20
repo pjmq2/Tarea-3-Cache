@@ -426,15 +426,17 @@ public class MenuController {
         diferenciaNormal1[29]=ChronoUnit.MILLIS.between(antesNormal, despuesNormal);
 
         //Ahora vamos a sacar cuanto duraba en promedio en leer los 5 datos
-        for(int i=0; i<5; i++){
+        promCache=0;
+        promNormal=0;
+        for(int i=0; i<10; i++){
             int p=20+i;
             promCache += diferenciaCache1[p];
             promNormal += diferenciaNormal1[p];
             System.out.println("Cache #"+p+" duro: "+diferenciaCache1[p]);
             System.out.println("Normal #"+p+" duro: "+diferenciaNormal1[p]);
         }
-        promCache = promCache /20;
-        promNormal = promNormal /20;
+        promCache = promCache /10;
+        promNormal = promNormal /10;
         System.out.println("En promedio leyendo 5 paginas sin cache duro: "+promNormal+" milisegundos");
         System.out.println("En promedio leyendo 5 paginas con cache duro: "+promCache+" milisegundos");
     } //Realiza las pruebas y experimentos necesarios
