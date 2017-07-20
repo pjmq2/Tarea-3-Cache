@@ -1,7 +1,5 @@
 package cr.ac.ucr.ecci.ci1310.cache;
 
-import com.sun.org.apache.bcel.internal.generic.LoadClass;
-
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -16,19 +14,100 @@ public class MenuController {
     WikiPageServiceImpl wikipedia;
 
     public MenuController(){
+
     } //Constructor de la clase Menu
 
-    public void iniciar() throws Throwable {
-        WikiPageServiceImpl wikipediaTemp;
-        System.out.println("Bienvenido al buscador de paginas de Wikipedia \nDesea utilizar Cache en sus busquedas? de ser asi favor escribir \"S\" \n");
-        String useCache = "";
+    public void menuPruebas() throws Throwable {
+        System.out.println("Desea realizar las pruebas de eficiencia para la base de datos con cache?\nFavor escribir \"S\" o escriba \"n\" si no lo quiere realizar");
+        String answer = "";
         Scanner into = new Scanner(System.in);
-        useCache = into.nextLine();
-        if(useCache.equalsIgnoreCase("s")){
-            wikipediaTemp = new WikiPageServiceImpl(true);
+        answer = into.nextLine();
+        boolean respuestaIncorrecta = true;
+        while(respuestaIncorrecta){
+            if(answer.equalsIgnoreCase("s")) {
+                this.pruebas();
+                this.iniciarBusqueda();
+                respuestaIncorrecta=false;
+            }
+            else if(answer.equalsIgnoreCase("N")){
+                this.iniciarBusqueda();
+            }
+            else{
+                System.out.println("Favor escribir una letra correcta");
+            }
+        }
+    }
+
+    public void iniciarBusqueda() throws Throwable {
+        WikiPageServiceImpl wikipediaTemp;
+        boolean parametros = false;
+        System.out.println("Bienvenido al buscador de paginas de Wikipedia \n");
+        System.out.println("Desea utilizar Cache en sus busquedas? de ser asi favor escribir \"S\" o escriba \"n\" si no lo va a utilizar");
+        String answer = "";
+        Scanner into = new Scanner(System.in);
+        answer = into.nextLine();
+        if(answer.equalsIgnoreCase("s")){
+            String nombreCache = "";
+            int tamanoMaximo = 10;
+            int vidaCache = 999999;
+            int vidaDatos = 3600;
+            System.out.println("Favor ingresar el nombre para el cache");
+            nombreCache = into.nextLine();
+            System.out.println("Desea ingresar un tamaño para el cache, favor digitar \"s\", cualquier otra letra se tomara como un No");
+            answer = into.nextLine();
+            if(answer.equalsIgnoreCase("S")){
+                System.out.println("Favor ingresar el tamaño para el cache");
+                boolean falloValor = true;
+                while(falloValor) {
+                    try {
+                        falloValor = false;
+                        tamanoMaximo = into.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Favor ingresar un numero Valido");
+                        falloValor = true;
+                    }
+                }
+            }
+            System.out.println("Desea ingresar un tiempo de vida para el cache, favor digitar \"s\", cualquier otra letra se tomara como un No");
+            answer = into.nextLine();
+            if(answer.equalsIgnoreCase("S")){
+                System.out.println("Favor ingresar el tiempo de vida para el cache");
+                boolean falloValor = true;
+                while(falloValor) {
+                    try {
+                        falloValor = false;
+                        vidaCache = into.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Favor ingresar un número Valido");
+                        falloValor = true;
+                    }
+                }
+            }
+            System.out.println("Desea ingresar un tiempo de vida para los datos, favor digitar \"s\", cualquier otra letra se tomara como un No");
+            answer = into.nextLine();
+            if(answer.equalsIgnoreCase("S")){
+                System.out.println("Favor ingresar el tiempo de vida para los datos");
+                boolean falloValor = true;
+                while(falloValor) {
+                    try {
+                        falloValor = false;
+                        vidaDatos = into.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Favor ingresar un número Válido");
+                        falloValor = true;
+                    }
+                }
+            }
+
+            wikipediaTemp = new WikiPageServiceImpl(vidaDatos,nombreCache,tamanoMaximo, vidaCache);
+        }
+        else if(answer.equalsIgnoreCase("N")){
+            wikipediaTemp = new WikiPageServiceImpl();
         }
         else{
-            wikipediaTemp = new WikiPageServiceImpl(false);
+            wikipediaTemp = null;
+            System.out.print("Favor digite una letra correcta\n");
+            this.iniciarBusqueda();
         }
         wikipedia = wikipediaTemp;
         this.busqueda();
@@ -89,7 +168,7 @@ public class MenuController {
             this.busqueda();
         }
         else if(respuesta.equalsIgnoreCase("N")){
-            this.iniciar();
+            this.iniciarBusqueda();
         }
         else if(respuesta.equalsIgnoreCase("E")){
             System.exit(0);
@@ -102,8 +181,8 @@ public class MenuController {
 
     public void pruebas() throws SQLException, ClassNotFoundException {
         System.out.print("Bienvenido a la seccion de pruebas y estadisticas. A continuacion se realizaran las siguientes pruebas:\n");
-        WikiPageServiceImpl serviceCache1 = new WikiPageServiceImpl(true);
-        WikiPageServiceImpl serviceNormal = new WikiPageServiceImpl(false);
+        WikiPageServiceImpl serviceCache1 = new WikiPageServiceImpl(9999,"hola",30,1800);
+        WikiPageServiceImpl serviceNormal = new WikiPageServiceImpl();
         WikiPage wiki = null;
         //Primero vamos a dejar cargadas ciertas paginas en el cache
         for(int i=0; i<10;i++){
@@ -142,8 +221,8 @@ public class MenuController {
             antesNormal = LocalDateTime.now();
             serviceNormal.searchId(""+q);
             despuesNormal = LocalDateTime.now();
-            diferenciaCache1[i]=ChronoUnit.MILLIS.between(antesCache, despuesCache);
-            diferenciaNormal1[i]=ChronoUnit.MILLIS.between(antesNormal, despuesNormal);
+            diferenciaCache1[10+i]=ChronoUnit.MILLIS.between(antesCache, despuesCache);
+            diferenciaNormal1[10+i]=ChronoUnit.MILLIS.between(antesNormal, despuesNormal);
         }
         //Ya tenemos un arreglo con lo que se duro obteniendo cada una de las 20 paginas con y sin cache
         //Ahora vamos a ver cual es el promedio de tiempo con y sin cache
@@ -152,6 +231,8 @@ public class MenuController {
         for (int i = 0; i<20; i++){
             promCache+=diferenciaCache1[i];
             promNormal+=diferenciaNormal1[i];
+            System.out.println("Cache #"+i+" duro: "+diferenciaCache1[i]);
+            System.out.println("Normal #"+i+" duro: "+diferenciaNormal1[i]);
         }
         promCache = promCache / 20;
         promNormal = promNormal / 20;
@@ -162,11 +243,11 @@ public class MenuController {
         //Vamos a llenar el cache con las 50 paginas nuevas
         for(int i=0; i<5;i++){
             int a = i+980;
-            int b = i+1004;
+            int b = i+1206;
             int c = i+1009;
             int d = i+1016;
             int e = i+1026;
-            int f = i+1109;
+            int f = i+1227;
             int g = i+1151;
             int h = i+1166;
             int j = i+1192;
@@ -345,14 +426,19 @@ public class MenuController {
         diferenciaNormal1[29]=ChronoUnit.MILLIS.between(antesNormal, despuesNormal);
 
         //Ahora vamos a sacar cuanto duraba en promedio en leer los 5 datos
-        for(int i=0; i<5; i++){
-            promCache += diferenciaCache1[20+i];
-            promNormal += diferenciaNormal1[20+i];
+        promCache=0;
+        promNormal=0;
+        for(int i=0; i<10; i++){
+            int p=20+i;
+            promCache += diferenciaCache1[p];
+            promNormal += diferenciaNormal1[p];
+            System.out.println("Cache #"+p+" duro: "+diferenciaCache1[p]);
+            System.out.println("Normal #"+p+" duro: "+diferenciaNormal1[p]);
         }
-        promCache = promCache /20;
-        promNormal = promNormal /20;
-        System.out.println("En promedio leyendo 5 paginas sin cache duro: "+promNormal);
-        System.out.println("En promedio leyendo 5 paginas con cache duro: "+promCache);
+        promCache = promCache /10;
+        promNormal = promNormal /10;
+        System.out.println("En promedio leyendo 5 paginas sin cache duro: "+promNormal+" milisegundos");
+        System.out.println("En promedio leyendo 5 paginas con cache duro: "+promCache+" milisegundos");
     } //Realiza las pruebas y experimentos necesarios
 
 }
