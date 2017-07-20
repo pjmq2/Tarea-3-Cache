@@ -1,7 +1,8 @@
 package cr.ac.ucr.ecci.ci1310.cache;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Hello world!
@@ -9,22 +10,17 @@ import java.sql.SQLException;
  */
 public class App 
 {
-    public static void  main(String[] parametros) throws SQLException {
-        Connection connection = null;
-        try{
-            connection = WikiPageDaoImpl.getConnection();
-            if(connection != null){
-                System.out.println("Buena Conexion");
-            }
-            else{
-                System.out.println("Mala Conexion");
-            }
-        }catch(Exception e){
-            e.printStackTrace();
-        }finally {
-            if (connection != null){
-                connection.close();
-            }
-        }
+
+    public static void  main(String[] parametros) throws Throwable {
+        menu();
+    }
+
+    public static void menu() throws Throwable {
+        MenuController menu = new MenuController();
+    }
+
+    public void prueba1() throws SQLException, ClassNotFoundException {
+        WikiPageServiceImpl wikipedia = new WikiPageServiceImpl(false);
+        ArrayList<WikiPage> lista = wikipedia.searchName("Kansas");
     }
 }

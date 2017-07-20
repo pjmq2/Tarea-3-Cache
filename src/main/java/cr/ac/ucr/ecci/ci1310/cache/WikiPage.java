@@ -1,6 +1,6 @@
 package cr.ac.ucr.ecci.ci1310.cache;
 
-import java.time.LocalDateTime;
+import java.math.BigDecimal;
 
 /**
  * Created by pjmq2 on 15/07/2017.
@@ -62,6 +62,25 @@ public class WikiPage {
 
     public int getLen() {
         return len;
+    }
+
+    public void print(){
+        String mensaje = "id: " + id + "\n";
+        mensaje += "Namespace: " + namespace + "\n";
+        mensaje += "Title: " + title + "\n";
+        mensaje += "Counter: " + counter + "\n";
+        mensaje += "Is_redirect: " + is_redirect + "\n";
+        mensaje += "Is_new: " + is_new + "\n";
+        mensaje += "Random: " + random + "\n";
+        mensaje += "Latest: " + latest + "\n";
+        mensaje += "len: " + len + "\n";
+        System.out.println(mensaje);
+    }
+
+    public void printIdTitle(){
+        String mensaje = "id: " + id;
+        mensaje += ", Title: " + title;
+        System.out.println(mensaje);
     }
 }
 
