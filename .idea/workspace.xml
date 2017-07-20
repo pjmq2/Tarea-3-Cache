@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7392b1da-35fc-4fef-9e4c-62b894253002" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/App.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/MenuController.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/MenuController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,8 +44,8 @@
       <file leaf-file-name="WikiPageServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="57" column="62" lean-forward="false" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
+            <state relative-caret-position="378">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
                 <element signature="method#WikiPageServiceImpl#0;class#WikiPageServiceImpl#0" expanded="false" />
@@ -798,7 +792,7 @@
       <workItem from="1500247872734" duration="12485000" />
       <workItem from="1500419870354" duration="882000" />
       <workItem from="1500513239946" duration="5296000" />
-      <workItem from="1500519993805" duration="10994000" />
+      <workItem from="1500519993805" duration="11560000" />
     </task>
     <task id="LOCAL-00001" summary="Subida inicial">
       <created>1499827964794</created>
@@ -814,11 +808,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500524624653</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finaliza las pruebas">
+      <created>1500532854229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1500532854229</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38719000" />
+    <option name="totallyTimeSpent" value="39285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,7 +832,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -852,7 +852,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204983" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3204983" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20408164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -915,7 +915,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subida inicial" />
     <MESSAGE value="Cambios en las pruebas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios en las pruebas" />
+    <MESSAGE value="Finaliza las pruebas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finaliza las pruebas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1222,8 +1223,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="57" column="62" lean-forward="false" selection-start-line="57" selection-start-column="62" selection-end-line="57" selection-end-column="62" />
+        <state relative-caret-position="378">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
             <element signature="method#WikiPageServiceImpl#0;class#WikiPageServiceImpl#0" expanded="false" />

@@ -56,4 +56,5 @@ public class WikiPageServiceImpl implements WikiPageService {
         }
         return number;
     } //Devueve el numero de paginas encontradas con un titulo
+
 }
