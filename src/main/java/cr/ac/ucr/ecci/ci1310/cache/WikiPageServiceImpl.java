@@ -19,7 +19,7 @@ public class WikiPageServiceImpl implements WikiPageService {
             cacheId = new CacheTemp();
             cacheName = new CacheTemp();
         }
-    }
+    } //Constructor de la clase, permite usar o no cache dependiendo del paramentro
 
     public WikiPage searchId(String id) throws SQLException, ClassNotFoundException {
         WikiPage wiki = null;
@@ -35,7 +35,7 @@ public class WikiPageServiceImpl implements WikiPageService {
             wiki = dao.searchId(id);
         }
         return wiki;
-    }
+    } //Busca una pagina por Id
 
     public ArrayList<WikiPage> searchName(String name) throws SQLException, ClassNotFoundException {
         ArrayList<WikiPage> list = new ArrayList<WikiPage>();
@@ -45,7 +45,7 @@ public class WikiPageServiceImpl implements WikiPageService {
             list = dao.searchName(name);
         }
         return list;
-    }
+    } //Busca un array de paginas por titulo
 
     public int numberSearchName(String name) throws SQLException, ClassNotFoundException {
         int number = 0;
@@ -55,5 +55,5 @@ public class WikiPageServiceImpl implements WikiPageService {
             number = dao.numberSearchName(name);
         }
         return number;
-    }
+    } //Devueve el numero de paginas encontradas con un titulo
 }

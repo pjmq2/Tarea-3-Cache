@@ -6,6 +6,7 @@ import java.math.BigDecimal;
  * Created by pjmq2 on 15/07/2017.
  */
 public class WikiPage {
+    //Parametros de la clase, cumplen con las columnas de la tabla de paginas que se puede ver al final de la clase
     private int id;
     private int namespace;
     private String title;
@@ -75,13 +76,13 @@ public class WikiPage {
         mensaje += "Latest: " + latest + "\n";
         mensaje += "len: " + len + "\n";
         System.out.println(mensaje);
-    }
+    } //Imprime los valores de la pagina
 
     public void printIdTitle(){
         String mensaje = "id: " + id;
         mensaje += ", Title: " + title;
         System.out.println(mensaje);
-    }
+    } //Imprime unicamente el titulo y el id de la pagina
 }
 
 /*
