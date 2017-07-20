@@ -20,15 +20,74 @@ public class MenuController {
 
     public void iniciar() throws Throwable {
         WikiPageServiceImpl wikipediaTemp;
-        System.out.println("Bienvenido al buscador de paginas de Wikipedia \nDesea utilizar Cache en sus busquedas? de ser asi favor escribir \"S\" \n");
-        String useCache = "";
+        boolean parametros = false;
+        System.out.println("Bienvenido al buscador de paginas de Wikipedia \n");
+        System.out.println("Desea utilizar Cache en sus busquedas? de ser asi favor escribir \"S\" o escriba \"n\" si no lo va a utilizar");
+        String answer = "";
         Scanner into = new Scanner(System.in);
-        useCache = into.nextLine();
-        if(useCache.equalsIgnoreCase("s")){
-            wikipediaTemp = new WikiPageServiceImpl(true);
+        answer = into.nextLine();
+        if(answer.equalsIgnoreCase("s")){
+            String nombreCache = "";
+            int tamanoMaximo = 10;
+            int vidaCache = 999999;
+            int vidaDatos = 3600;
+            System.out.println("Favor ingresar el nombre para el cache");
+            nombreCache = into.nextLine();
+            System.out.println("Desea ingresar un tamaño para el cache, favor digitar \"s\", cualquier otra letra se tomara como un No");
+            answer = into.nextLine();
+            if(answer.equalsIgnoreCase("S")){
+                System.out.println("Favor ingresar el tamaño para el cache");
+                boolean falloValor = true;
+                while(falloValor) {
+                    try {
+                        falloValor = false;
+                        tamanoMaximo = into.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Favor ingresar un numero Valido");
+                        falloValor = true;
+                    }
+                }
+            }
+            System.out.println("Desea ingresar un tiempo de vida para el cache, favor digitar \"s\", cualquier otra letra se tomara como un No");
+            answer = into.nextLine();
+            if(answer.equalsIgnoreCase("S")){
+                System.out.println("Favor ingresar el tiempo de vida para el cache");
+                boolean falloValor = true;
+                while(falloValor) {
+                    try {
+                        falloValor = false;
+                        vidaCache = into.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Favor ingresar un número Valido");
+                        falloValor = true;
+                    }
+                }
+            }
+            System.out.println("Desea ingresar un tiempo de vida para los datos, favor digitar \"s\", cualquier otra letra se tomara como un No");
+            answer = into.nextLine();
+            if(answer.equalsIgnoreCase("S")){
+                System.out.println("Favor ingresar el tiempo de vida para los datos");
+                boolean falloValor = true;
+                while(falloValor) {
+                    try {
+                        falloValor = false;
+                        vidaDatos = into.nextInt();
+                    } catch (Exception e) {
+                        System.out.println("Favor ingresar un número Válido");
+                        falloValor = true;
+                    }
+                }
+            }
+
+            wikipediaTemp = new WikiPageServiceImpl(vidaDatos,nombreCache,tamanoMaximo, vidaCache);
+        }
+        else if(answer.equalsIgnoreCase("N")){
+            wikipediaTemp = new WikiPageServiceImpl();
         }
         else{
-            wikipediaTemp = new WikiPageServiceImpl(false);
+            wikipediaTemp = null;
+            System.out.print("Favor digite una letra correcta\n");
+            this.iniciar();
         }
         wikipedia = wikipediaTemp;
         this.busqueda();
@@ -102,8 +161,8 @@ public class MenuController {
 
     public void pruebas() throws SQLException, ClassNotFoundException {
         System.out.print("Bienvenido a la seccion de pruebas y estadisticas. A continuacion se realizaran las siguientes pruebas:\n");
-        WikiPageServiceImpl serviceCache1 = new WikiPageServiceImpl(true);
-        WikiPageServiceImpl serviceNormal = new WikiPageServiceImpl(false);
+        WikiPageServiceImpl serviceCache1 = new WikiPageServiceImpl(9999,"hola",30,1800);
+        WikiPageServiceImpl serviceNormal = new WikiPageServiceImpl();
         WikiPage wiki = null;
         //Primero vamos a dejar cargadas ciertas paginas en el cache
         for(int i=0; i<10;i++){
@@ -162,11 +221,11 @@ public class MenuController {
         //Vamos a llenar el cache con las 50 paginas nuevas
         for(int i=0; i<5;i++){
             int a = i+980;
-            int b = i+1004;
+            int b = i+1206;
             int c = i+1009;
             int d = i+1016;
             int e = i+1026;
-            int f = i+1109;
+            int f = i+1227;
             int g = i+1151;
             int h = i+1166;
             int j = i+1192;
@@ -351,9 +410,12 @@ public class MenuController {
         }
         promCache = promCache /20;
         promNormal = promNormal /20;
-        System.out.println("En promedio leyendo 5 paginas sin cache duro: "+promNormal);
-        System.out.println("En promedio leyendo 5 paginas con cache duro: "+promCache);
+        System.out.println("En promedio leyendo 5 paginas sin cache duro: "+promNormal+" milisegundos");
+        System.out.println("En promedio leyendo 5 paginas con cache duro: "+promCache+" milisegundos");
     } //Realiza las pruebas y experimentos necesarios
 
+    public void pruebas2() throws SQLException, ClassNotFoundException {
+
+    }
 }
 

@@ -15,6 +15,7 @@ public class App
     public static void  main(String[] parametros) throws Throwable {
        menu = new MenuController();
        pruebas();
+       iniciar();
     }
 
     public static void pruebas() throws SQLException, ClassNotFoundException {
