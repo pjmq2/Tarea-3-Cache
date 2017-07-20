@@ -9,16 +9,27 @@ import java.util.ArrayList;
 public class WikiPageServiceImpl implements WikiPageService {
     private WikiPageDaoImpl dao;
     private boolean useCache;
+    private CacheTemp cacheId;
+    private CacheTemp cacheName;
 
     public WikiPageServiceImpl(boolean use) {
         useCache = use;
         dao = new WikiPageDaoImpl();
+        if(use){
+            cacheId = new CacheTemp();
+            cacheName = new CacheTemp();
+        }
     }
 
     public WikiPage searchId(String id) throws SQLException, ClassNotFoundException {
         WikiPage wiki = null;
         if(useCache){
-
+            if(cacheId.exist(id)){
+                wiki = cacheId.getcontent(id);
+            }else{
+                wiki = dao.searchId(id);
+                cacheId.put(id, wiki);
+            }
         }
         else{
             wiki = dao.searchId(id);

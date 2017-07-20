@@ -19,8 +19,7 @@ public class App
         MenuController menu = new MenuController();
     }
 
-    public void prueba1() throws SQLException, ClassNotFoundException {
-        WikiPageServiceImpl wikipedia = new WikiPageServiceImpl(false);
-        ArrayList<WikiPage> lista = wikipedia.searchName("Kansas");
+    public void pruebas(){
+
     }
 }
