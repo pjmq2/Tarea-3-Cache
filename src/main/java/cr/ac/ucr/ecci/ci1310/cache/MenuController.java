@@ -1,7 +1,5 @@
 package cr.ac.ucr.ecci.ci1310.cache;
 
-import com.sun.org.apache.bcel.internal.generic.LoadClass;
-
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -16,9 +14,31 @@ public class MenuController {
     WikiPageServiceImpl wikipedia;
 
     public MenuController(){
+
     } //Constructor de la clase Menu
 
-    public void iniciar() throws Throwable {
+    public void menuPruebas() throws Throwable {
+        System.out.println("Desea realizar las pruebas de eficiencia para la base de datos con cache?\nFavor escribir \"S\" o escriba \"n\" si no lo quiere realizar");
+        String answer = "";
+        Scanner into = new Scanner(System.in);
+        answer = into.nextLine();
+        boolean respuestaIncorrecta = true;
+        while(respuestaIncorrecta){
+            if(answer.equalsIgnoreCase("s")) {
+                this.pruebas();
+                this.iniciarBusqueda();
+                respuestaIncorrecta=false;
+            }
+            else if(answer.equalsIgnoreCase("N")){
+                this.iniciarBusqueda();
+            }
+            else{
+                System.out.println("Favor escribir una letra correcta");
+            }
+        }
+    }
+
+    public void iniciarBusqueda() throws Throwable {
         WikiPageServiceImpl wikipediaTemp;
         boolean parametros = false;
         System.out.println("Bienvenido al buscador de paginas de Wikipedia \n");
@@ -87,7 +107,7 @@ public class MenuController {
         else{
             wikipediaTemp = null;
             System.out.print("Favor digite una letra correcta\n");
-            this.iniciar();
+            this.iniciarBusqueda();
         }
         wikipedia = wikipediaTemp;
         this.busqueda();
@@ -148,7 +168,7 @@ public class MenuController {
             this.busqueda();
         }
         else if(respuesta.equalsIgnoreCase("N")){
-            this.iniciar();
+            this.iniciarBusqueda();
         }
         else if(respuesta.equalsIgnoreCase("E")){
             System.exit(0);
@@ -201,8 +221,8 @@ public class MenuController {
             antesNormal = LocalDateTime.now();
             serviceNormal.searchId(""+q);
             despuesNormal = LocalDateTime.now();
-            diferenciaCache1[i]=ChronoUnit.MILLIS.between(antesCache, despuesCache);
-            diferenciaNormal1[i]=ChronoUnit.MILLIS.between(antesNormal, despuesNormal);
+            diferenciaCache1[10+i]=ChronoUnit.MILLIS.between(antesCache, despuesCache);
+            diferenciaNormal1[10+i]=ChronoUnit.MILLIS.between(antesNormal, despuesNormal);
         }
         //Ya tenemos un arreglo con lo que se duro obteniendo cada una de las 20 paginas con y sin cache
         //Ahora vamos a ver cual es el promedio de tiempo con y sin cache
@@ -211,6 +231,8 @@ public class MenuController {
         for (int i = 0; i<20; i++){
             promCache+=diferenciaCache1[i];
             promNormal+=diferenciaNormal1[i];
+            System.out.println("Cache #"+i+" duro: "+diferenciaCache1[i]);
+            System.out.println("Normal #"+i+" duro: "+diferenciaNormal1[i]);
         }
         promCache = promCache / 20;
         promNormal = promNormal / 20;
@@ -405,8 +427,11 @@ public class MenuController {
 
         //Ahora vamos a sacar cuanto duraba en promedio en leer los 5 datos
         for(int i=0; i<5; i++){
-            promCache += diferenciaCache1[20+i];
-            promNormal += diferenciaNormal1[20+i];
+            int p=20+i;
+            promCache += diferenciaCache1[p];
+            promNormal += diferenciaNormal1[p];
+            System.out.println("Cache #"+p+" duro: "+diferenciaCache1[p]);
+            System.out.println("Normal #"+p+" duro: "+diferenciaNormal1[p]);
         }
         promCache = promCache /20;
         promNormal = promNormal /20;
@@ -414,8 +439,5 @@ public class MenuController {
         System.out.println("En promedio leyendo 5 paginas con cache duro: "+promCache+" milisegundos");
     } //Realiza las pruebas y experimentos necesarios
 
-    public void pruebas2() throws SQLException, ClassNotFoundException {
-
-    }
 }
 

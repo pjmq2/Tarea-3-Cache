@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Tarea-3-Cache:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7392b1da-35fc-4fef-9e4c-62b894253002" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cr_ac_ucr_ecci_ci1310_cache__cache_1_0_SNAPSHOT.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BenFInal.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CacheBenjamin.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CacheBenjamin3.rar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/Cache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/Data.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/FIFOCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/IDLastAccess.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/LIFOCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/LRUCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/LastAccesComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/company/RANDOMCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/cr/ac/ucr/ecci/ci1310/cache/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/App.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/App.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/MenuController.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/MenuController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPage.class" afterPath="$PROJECT_DIR$/target/classes/cr/ac/ucr/ecci/ci1310/cache/WikiPage.class" />
@@ -30,7 +21,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,50 +47,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="databaseSettings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/databaseSettings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding>
+                <element signature="docComment;class#MenuController#0" expanded="false" />
+                <element signature="method#iniciarBusqueda#0;class#MenuController#0" expanded="false" />
+                <element signature="method#busqueda#0;class#MenuController#0" expanded="false" />
+                <element signature="method#finalizar#0;class#MenuController#0" expanded="false" />
+                <element signature="e#10063#10159#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WikiPageServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-              <folding>
-                <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
-                <element signature="e#1493#1503#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-461">
-              <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#MenuController#0;class#MenuController#0" expanded="false" />
-                <element signature="e#9283#9379#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="315">
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -134,10 +111,11 @@
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/dependency-reduced-pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -156,7 +134,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CI-1310" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="CI-1310" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -202,7 +190,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,52 +201,10 @@
               <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CI1310" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tarea-3-Cache" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,10 +212,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ci1310" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -747,6 +700,8 @@
       <workItem from="1500533518691" duration="630000" />
       <workItem from="1500534543969" duration="792000" />
       <workItem from="1500536089219" duration="3159000" />
+      <workItem from="1500584655000" duration="4184000" />
+      <workItem from="1500588868811" duration="644000" />
     </task>
     <task id="LOCAL-00001" summary="Subida inicial">
       <created>1499827964794</created>
@@ -773,7 +728,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43866000" />
+    <option name="totallyTimeSpent" value="48694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -789,26 +744,25 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3189066" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31776765" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33295584" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31941545" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3104189" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38724375" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.476082" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2518797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12298603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -817,6 +771,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -874,7 +829,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -883,54 +838,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#WikiPage#0" expanded="false" />
-            <element signature="method#WikiPage#0;class#WikiPage#0" expanded="false" />
-            <element signature="method#print#0;class#WikiPage#0" expanded="false" />
-            <element signature="method#printIdTitle#0;class#WikiPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="88" column="52" lean-forward="false" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
-          <folding>
-            <element signature="method#WikiPageDaoImpl#0;class#WikiPageDaoImpl#0" expanded="false" />
-            <element signature="method#searchId#0;class#WikiPageDaoImpl#0" expanded="false" />
-            <element signature="method#searchName#0;class#WikiPageDaoImpl#0" expanded="false" />
-            <element signature="method#numberSearchName#0;class#WikiPageDaoImpl#0" expanded="false" />
-            <element signature="method#conecting#0;class#WikiPageDaoImpl#0" expanded="false" />
-            <marker date="1500532833843" expanded="true" signature="769:803" ph="Select * fro... page" />
-            <marker date="1500532833843" expanded="true" signature="2023:2078" ph="Select * fro... page" />
-            <marker date="1500532833843" expanded="true" signature="3365:3427" ph="Select count... page" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
-            <element signature="e#1493#1503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -940,7 +852,11 @@
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
-            <element signature="e#1493#1503#0" expanded="true" />
+            <element signature="method#WikiPageServiceImpl#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#WikiPageServiceImpl#1;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchId#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchName#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#numberSearchName#0;class#WikiPageServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -950,9 +866,11 @@
         <state relative-caret-position="546">
           <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MenuController#0;class#MenuController#0" expanded="false" />
-            <element signature="e#9283#9379#0" expanded="false" />
+            <element signature="docComment;class#MenuController#0" expanded="false" />
+            <element signature="method#iniciarBusqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#busqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#finalizar#0;class#MenuController#0" expanded="false" />
+            <element signature="e#10063#10159#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -961,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="98" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,9 +916,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,9 +925,11 @@
         <state relative-caret-position="2100">
           <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MenuController#0;class#MenuController#0" expanded="false" />
-            <element signature="e#9283#9379#0" expanded="false" />
+            <element signature="docComment;class#MenuController#0" expanded="false" />
+            <element signature="method#iniciarBusqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#busqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#finalizar#0;class#MenuController#0" expanded="false" />
+            <element signature="e#10063#10159#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1021,7 +938,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="98" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +977,11 @@
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
-            <element signature="e#1493#1503#0" expanded="true" />
+            <element signature="method#WikiPageServiceImpl#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#WikiPageServiceImpl#1;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchId#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchName#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#numberSearchName#0;class#WikiPageServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,9 +990,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,27 +1000,26 @@
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
-            <element signature="e#1493#1503#0" expanded="true" />
+            <element signature="method#WikiPageServiceImpl#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#WikiPageServiceImpl#1;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchId#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchName#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#numberSearchName#0;class#WikiPageServiceImpl#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
           <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MenuController#0;class#MenuController#0" expanded="false" />
-            <element signature="e#9283#9379#0" expanded="false" />
+            <element signature="docComment;class#MenuController#0" expanded="false" />
+            <element signature="method#iniciarBusqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#busqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#finalizar#0;class#MenuController#0" expanded="false" />
+            <element signature="e#10063#10159#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,9 +1028,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1150,9 +1065,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,9 +1094,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,9 +1124,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1261,23 +1170,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/CacheTemp.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="12" column="98" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,14 +1201,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cr/ac/ucr/ecci/ci1310/cache/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cr/ac/ucr/ecci/ci1310/cache/AppTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -1326,43 +1219,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#WikiPageServiceImpl#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#WikiPageServiceImpl#1;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchId#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#searchName#0;class#WikiPageServiceImpl#0" expanded="false" />
+            <element signature="method#numberSearchName#0;class#WikiPageServiceImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseSettings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-461">
-          <caret line="71" column="25" lean-forward="true" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+        <state relative-caret-position="63">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MenuController#0;class#MenuController#0" expanded="false" />
-            <element signature="e#9283#9379#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cr/ac/ucr/ecci/ci1310/cache/WikiPageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="60" column="48" lean-forward="false" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
-          <folding>
-            <element signature="docComment;class#WikiPageServiceImpl#0" expanded="false" />
-            <element signature="e#1493#1503#0" expanded="true" />
+            <element signature="docComment;class#MenuController#0" expanded="false" />
+            <element signature="method#iniciarBusqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#busqueda#0;class#MenuController#0" expanded="false" />
+            <element signature="method#finalizar#0;class#MenuController#0" expanded="false" />
+            <element signature="e#10063#10159#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1372,11 +1292,20 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+              <type id="javaee-facet-resources" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>Tarea-3-Cache:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1431,6 +1360,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: cr.ac.ucr.ecci.ci1310.cache.:cache:1.0-SNAPSHOT</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
