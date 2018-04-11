@@ -6,8 +6,12 @@
           <option name="url" value="https://github.com/brenes25/Router.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/pjmq2/kmlCreate.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\Users\pjmq2\Desktop" />
+    <option name="cloneParentDir" value="C:\Users\pjmq2\Documents\MEGAsync\UCR\Asistencia" />
   </component>
 </application>
