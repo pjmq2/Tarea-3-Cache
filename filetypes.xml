@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Data" type="CLASS" />
       <mapping pattern="WikiPage" type="CLASS" />
+      <mapping pattern=" ESTE ES MI DESEO" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
